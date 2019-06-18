@@ -38,7 +38,8 @@ export default {
           place: 'Juá City',
           description: 'Eita coisa boa',
           hashtags: '#eita',
-          image: '../assets/omni_stack.png',
+          image:
+            'https://rocketseat.com.br/static/images/og/semana-omnistack.png',
           likes: 122,
         },
       ],
