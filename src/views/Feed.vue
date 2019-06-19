@@ -28,22 +28,17 @@
 </template>
 
 <script>
+import { mapState, mapMutations, mapActions } from 'vuex';
+
 export default {
-  data() {
-    return {
-      feed: [
-        {
-          _id: 1,
-          author: 'Leonardo Brito',
-          place: 'Juá City',
-          description: 'Eita coisa boa',
-          hashtags: '#eita',
-          image:
-            'https://rocketseat.com.br/static/images/og/semana-omnistack.png',
-          likes: 122,
-        },
-      ],
-    };
+  name: 'Feed',
+  created() {
+    this.$store.dispatch('fetchFeed');
+  },
+  computed: { ...mapState(['feed']) },
+  methods: {
+    ...mapMutations(['FETCH_FEED']),
+    ...mapActions(['fetchFeed']),
   },
 };
 </script>
