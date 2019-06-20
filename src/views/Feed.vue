@@ -1,6 +1,6 @@
 <template>
   <section>
-    <article v-for="post in feed" v-bind:key="post._id">
+    <article v-for="post in feed.posts" v-bind:key="post._id">
       <header>
         <div>
           <span>{{post.author}}</span>
