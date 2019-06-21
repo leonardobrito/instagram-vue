@@ -2,10 +2,10 @@
   <header>
     <div>
       <router-link to="/">
-        <img src="../assets/logo.svg" alt="InstaVue">
+        <img src="@/assets/logo.svg" alt="InstaVue">
       </router-link>
       <router-link to="/new">
-        <img src="../assets/camera.svg" alt="Enviar publicação">
+        <img src="@/assets/camera.svg" alt="Enviar publicação">
       </router-link>
     </div>
   </header>

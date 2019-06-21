@@ -6,16 +6,16 @@
           <span>{{post.author}}</span>
           <span>{{post.place}}</span>
         </div>
-        <img src="../assets/more.svg" alt="more">
+        <img src="@/assets/more.svg" alt="more">
       </header>
       <img :src="post.image" alt="author image">
       <footer>
         <div>
           <button>
-            <img src="../assets/like.svg" alt="like">
+            <img src="@/assets/like.svg" alt="like">
           </button>
-          <img src="../assets/comment.svg" alt="comment">
-          <img src="../assets/send.svg" alt="send">
+          <img src="@/assets/comment.svg" alt="comment">
+          <img src="@/assets/send.svg" alt="send">
         </div>
         <strong>{{post.likes}} curtidas</strong>
         <p>

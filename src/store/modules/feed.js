@@ -7,7 +7,7 @@ const feed = {
   getters: {},
   mutations: {
     FETCH_FEED: (state, payload) => {
-      state.posts = payload.feed;
+      state.posts = payload.posts;
     },
   },
   actions: {
@@ -15,7 +15,7 @@ const feed = {
       try {
         const { data } = await api.get('/posts');
         commit('FETCH_FEED', {
-          feed: data,
+          posts: data,
         });
       } catch (error) {
         console.warn(error);
